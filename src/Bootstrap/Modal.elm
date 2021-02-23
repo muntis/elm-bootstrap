@@ -694,7 +694,7 @@ renderFooter maybeFooter =
 closeButton : msg -> Html.Html msg
 closeButton closeMsg =
     Html.button
-        [ Attr.class "close", Events.onClick <| closeMsg ]
+        [ Attr.class "close", Events.onClick <| closeMsg, Attr.type_ "button" ]
         [ Html.text "×" ]
 
 
